@@ -4,7 +4,7 @@ def get_book_text(book_location):
         file_contents = f.read()
     return file_contents
 def main():
-    book_location = input("file location here")
+    book_location = ("/books/frankenstein.txt")
     book_text = get_book_text(book_location)
     print(book_text)
 main()
