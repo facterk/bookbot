@@ -6,7 +6,7 @@ def get_book_text(book_location):
 def main():
     book_location = ("/home/karamalatia/workspace/github.com/bookbot/books/frankenstein.txt")
     book_text = get_book_text(book_location)
-    print(book_text)
+    return book_text
 def num_of_words():
     book_txt = main()
     book_txt_string = str(book_txt)
