@@ -8,7 +8,8 @@ def main():
     book_text = get_book_text(book_location)
     print(book_text)
 def num_of_words():
-    word_count = len(main.split())
+    book_txt = main()
+    word_count = len(book_txt.split())
     result = (f"{word_count}words found in the documant")
     return result
 num_of_words()
