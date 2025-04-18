@@ -9,9 +9,9 @@ def main():
     print(book_text)
 def num_of_words():
     book_txt = main()
-    book_txt_sring = str(book_txt)
-    word_count = len(book_txt_sring.split())
-    result = (f"{word_count}words found in the documant")
+    book_txt_string = str(book_txt)
+    word_count = len(book_txt_string.split())
+    result = f"{word_count}words found in the documant"
     return result
 num_of_words()
 
