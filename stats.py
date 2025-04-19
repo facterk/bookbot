@@ -1,3 +1,4 @@
+from main import main
 def num_of_words():
     book_txt = main()
     book_txt_string = str(book_txt)
