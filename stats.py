@@ -12,7 +12,7 @@ def num_of_words():
     book_txt = main()
     book_txt_string = str(book_txt)
     word_count = len(book_txt_string.split())
-    result = f"found{word_count} total words"
+    result = f"found {word_count} total words"
     return result
 
 def get_num_charechters():
