@@ -14,3 +14,41 @@ def num_of_words():
     word_count = len(book_txt_string.split())
     result = f"{word_count} words found in the document"
     return result
+
+def get_num_charechters():
+    book_txt = main()
+    book_txt_string = str(book_txt)
+    book_txt_string_lower =book_txt_string.lower()
+    book_txt_charechters = list(book_txt_string_lower)
+    letters_dictionary = {
+        "a" : 0 ,
+        "b" : 0 ,
+        "c" : 0 ,
+        "d" : 0 ,
+        "e" : 0 ,
+        "f" : 0 ,
+        "g" : 0 ,
+        "h" : 0 ,
+        "i" : 0 ,
+        "j" : 0 ,
+        "k" : 0 ,
+        "l" : 0 ,
+        "m" : 0 ,
+        "n" : 0 ,
+        "o" : 0 ,
+        "p" : 0 ,
+        "q" : 0 ,
+        "r" : 0 ,
+        "s" : 0 ,
+        "t" : 0 ,
+        "u" : 0 ,
+        "v" : 0 ,
+        "w" : 0 ,
+        "x" : 0 ,
+        "y" : 0 ,
+        "z" : 0 ,
+    }
+    for i in book_txt_charechters:
+        if i in letters_dictionary:
+            letters_dictionary += 1
+    return letters_dictionary
