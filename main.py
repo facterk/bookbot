@@ -1,3 +1,4 @@
+import sys
 from stats import get_num_charechters
 from stats import num_of_words
 from stats import sort_diction
