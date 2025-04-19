@@ -50,5 +50,5 @@ def get_num_charechters():
     }
     for i in book_txt_charechters:
         if i in letters_dictionary:
-            letters_dictionary += 1
+            letters_dictionary[i] += 1
     return letters_dictionary
