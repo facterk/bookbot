@@ -52,3 +52,7 @@ def get_num_charechters():
         if i in letters_dictionary:
             letters_dictionary[i] += 1
     return letters_dictionary
+def sort_diction():
+    list = get_num_charechters()
+    sorted_lst = dict(sorted(list.items(), key=lambda item: item[1] , reverse=True))
+    return sorted_lst
