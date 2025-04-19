@@ -57,3 +57,10 @@ def sort_diction():
     list = get_num_charechters()
     sorted_lst = dict(sorted(list.items(), key=lambda item: item[1] , reverse=True))
     return sorted_lst
+print("============ BOOKBOT ============")
+print("Analyzing book found at books/frankenstein.txt...")
+print("----------- Word Count ----------")
+print (num_of_words())
+print("--------- Character Count -------")
+print(sort_diction())
+print("============= END ===============")
