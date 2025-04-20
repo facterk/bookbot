@@ -8,12 +8,9 @@ def get_book_text(book_location):
     return file_contents
 
 def main():
-    if len(sys.argv) != 2:
-        print("Usage: python3 main.py <path_to_book>")
-        sys.exit(1)
-    else:
-        book_location = ("books/frankenstein.txt")
-        book_text = get_book_text(book_location)
+    
+    book_location = ("books/frankenstein.txt")
+    book_text = get_book_text(book_location)
     return book_text
 
 def num_of_words():
