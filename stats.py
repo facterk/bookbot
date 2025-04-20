@@ -2,11 +2,9 @@ import sys
 import os
 def get_book_text(book_location):
     absolute_path = os.path.abspath(book_location)
-    try:
-        with open(absolute_path , encoding='utf-8') as f:
-            file_contents = f.read()
-    except FileNotFoundError:
-        print(f"Error: File '{book_location}' not found.")
+    with open(absolute_path , encoding='utf-8') as f:
+        file_contents = f.read()
+    
     return file_contents
 
 def main():
