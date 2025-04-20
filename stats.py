@@ -1,12 +1,21 @@
 import sys
+import os
 def get_book_text(book_location):
-    with open(book_location , encoding='utf-8') as f:
-        file_contents = f.read()
+    absolute_path = os.path.abspath(book_location)
+    try:
+        with open(book_location , encoding='utf-8') as f:
+            file_contents = f.read()
+    except FileNotFoundError:
+        print(f"Error: File '{book_location}' not found.")
     return file_contents
 
 def main():
-    book_location = (sys.argv[1])
-    book_text = get_book_text(book_location)
+    if sys.argv[2] != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+    else:
+        book_location = (sys.argv[1])
+        book_text = get_book_text(book_location)
     return book_text
 
 def num_of_words():
