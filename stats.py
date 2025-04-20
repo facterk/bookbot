@@ -23,6 +23,7 @@ def num_of_words():
     result = f"Found {word_count} total words"
     return result
 
+
 def get_num_charechters():
     book_txt = main()
     book_txt_string = str(book_txt)
@@ -63,4 +64,6 @@ def get_num_charechters():
 def sort_diction():
     list = get_num_charechters()
     sorted_lst = dict(sorted(list.items(), key=lambda item: item[1] , reverse=True))
+    for letter , count in sorted_lst.items():
+        print(f"{letter}: {count}")
     return sorted_lst
