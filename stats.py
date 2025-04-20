@@ -10,7 +10,7 @@ def get_book_text(book_location):
     return file_contents
 
 def main():
-    if sys.argv[2] != 2:
+    if len(sys.argv) != 2:
         print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     else:
